@@ -1,5 +1,29 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/GiaoDienChinh.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="buoi2.Cart" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="phdHead" runat="server">
+    <style>
+        .tongTien{
+            margin:0 50%;
+            display:inline-block;
+        }
+        .btnThanhToan
+        {
+            width:100px;
+            height:50px;
+            color:white;     
+            min-width: 150px; 
+            border-color:orange;       
+            background:orange;    
+            border-radius:35px;               
+        }
+        h3{
+            display:inline-block;
+            color:orange;
+           padding-left:2px;
+        }
+        span{
+            font-size:20px;         
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="phdBody" runat="server">
     	<section id="cart_items">
@@ -11,7 +35,7 @@
 				</ol>
 			</div>
 			<div class="table-responsive cart_info">
-				<table class="table table-condensed">
+				<%--<table class="table table-condensed">
 					<thead>
 						<tr class="cart_menu">
 							<td class="image">Item</td>
@@ -49,7 +73,7 @@
 							</td>
 						</tr>
 
-						<tr>
+						<%--<tr>
 							<td class="cart_product">
 								<a href=""><img src="../View/images/cart/two.png" alt=""></a>
 							</td>
@@ -98,9 +122,21 @@
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
 							</td>
-						</tr>
-					</tbody>
-				</table>
+						</tr>--%>
+				<%--	</tbody>
+				</table>--%>
+                <asp:GridView ID="grvGioHang" runat="server" CssClass="table table-striped table-hover" AutoGenerateColumns="false" GridLines="None">
+                    <Columns>
+                        <asp:BoundField DataField="TenSP" HeaderText="Name" />
+                        <asp:BoundField DataField="GiaTien" HeaderText="Price"  />
+                        <asp:BoundField DataField="SoLuong" HeaderText="Quality" />                     
+                        <asp:BoundField DataField="ThanhTien" HeaderText="Total Price"/>                       
+                    </Columns>
+                </asp:GridView>
+                <div class="tongTien col-lg-12">
+                 <span>Total Price:</span><asp:Label ID="lblTongTien" runat="server" CssClass="cart_total_price" Text="0"></asp:Label><h3>$</h3><br />
+                  <asp:Button ID="btnThanhToan" runat="server" CssClass="btnThanhToan" Text="Check Out" OnClick="btnThanhToan_Click"/>
+                  </div>
 			</div>
 		</div>
 	</section> <!--/#cart_items-->

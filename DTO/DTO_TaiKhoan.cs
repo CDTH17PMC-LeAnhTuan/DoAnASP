@@ -67,7 +67,7 @@ namespace DTO
         public DTO_TaiKhoan()
         {
             LaAdmin = false;
-            AnhDaiDien = "chuaco.jpg";
+            AnhDaiDien = "hello.jpg";
             TrangThai = true;
         }
         public DTO_TaiKhoan(String tenTaiKhoan, String matKhau, String email, String Sdt, String diaChi, String hoTen, bool laAdmin, String anhDaiDien, bool trangThai)

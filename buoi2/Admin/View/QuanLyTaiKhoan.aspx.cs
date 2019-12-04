@@ -41,7 +41,8 @@ namespace buoi2.Admin.View
                     txtHoTen.Text = tk.HoTen;
                     chkLaAdmin.Checked = tk.LaAdmin;
                     txtAnhDaiDien.Text   = tk.AnhDaiDien;
-                    chkTrangThai.Checked = tk.TrangThai;         
+                    chkTrangThai.Checked = tk.TrangThai;      
+                   
                 } 
             }
             if (e.CommandName == "XoaTK")

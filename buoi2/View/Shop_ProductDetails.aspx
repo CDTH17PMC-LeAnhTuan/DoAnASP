@@ -151,7 +151,8 @@
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="../View/images/product-details/1.jpg" alt="" />
+								<%--<img src="../View/images/product-details/1.jpg" alt="" />--%>
+                                <asp:Image ID="imgAnhMinhHoa" runat="server" ImageUrl='<%#  "images/shop/" + Eval("AnhMinhHoa") %>' />
 								<h3>ZOOM</h3>
 							</div>
 							<div id="similar-product" class="carousel slide" data-ride="carousel">
@@ -189,11 +190,12 @@
 						<div class="col-sm-7">
 							<div class="product-information"><!--/product-information-->
 								<img src="../View/images/product-details/new.jpg" class="newarrival" alt="" />
-								<h2>Anne Klein Sleeveless Colorblock Scuba</h2>
+								<%--<%--<h2>Anne Klein Sleeveless Colorblock Scuba</h2>--%>
+                                 <h2> <asp:Label ID="lblTenSP" runat="server" Text='<%# Eval("TenSP") %>'></asp:Label></h2>
 								<p>Web ID: 1089772</p>
 								<img src="../View/images/product-details/rating.png" alt="" />
 								<span>
-									<span>US $59</span>
+									<span> <asp:Label ID="lblGiaTien" runat="server" Text='<%# Eval("GiaTien") %>'></asp:Label></span>
 									<label>Quantity:</label>
 									<input type="text" value="3" />
 									<button type="button" class="btn btn-fefault cart">

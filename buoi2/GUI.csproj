@@ -276,8 +276,9 @@
     <Content Include="Admin\assets\libs\twitter-bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
     <Content Include="Admin\View\DangKy.aspx" />
     <Content Include="Admin\View\DangNhap.aspx" />
-    <Content Include="Admin\View\QuanLyLoaiSanPham.aspx" />
     <Content Include="Admin\View\QuanLySanPham.aspx" />
+    <Content Include="Admin\View\QuanLyHoaDon.aspx" />
+    <Content Include="Admin\View\QuanLyLoaiSanPham.aspx" />
     <Content Include="Admin\View\QuanLyTaiKhoan.aspx" />
     <Content Include="View\404.aspx" />
     <Content Include="View\Blog-single.aspx" />
@@ -403,9 +404,15 @@
     <Content Include="View\images\product-details\similar2.jpg" />
     <Content Include="View\images\product-details\similar3.jpg" />
     <Content Include="View\images\shop\advertisement.jpg" />
+    <Content Include="View\images\shop\product1.jpg" />
     <Content Include="View\images\shop\product10.jpg" />
     <Content Include="View\images\shop\product11.jpg" />
     <Content Include="View\images\shop\product12.jpg" />
+    <Content Include="View\images\shop\product2.jpg" />
+    <Content Include="View\images\shop\product3.jpg" />
+    <Content Include="View\images\shop\product4.jpg" />
+    <Content Include="View\images\shop\product5.jpg" />
+    <Content Include="View\images\shop\product6.jpg" />
     <Content Include="View\images\shop\product7.jpg" />
     <Content Include="View\images\shop\product8.jpg" />
     <Content Include="View\images\shop\product9.jpg" />
@@ -419,6 +426,11 @@
     <Content Include="View\js\main.js" />
     <Content Include="View\js\price-range.js" />
     <Content Include="View\Login.aspx" />
+    <Content Include="View\LSP001.aspx" />
+    <Content Include="View\LSP002.aspx" />
+    <Content Include="View\LSP003.aspx" />
+    <Content Include="View\LSP004.aspx" />
+    <Content Include="View\LSP005.aspx" />
     <Content Include="View\Shop_Product.aspx" />
     <Content Include="View\Shop_ProductDetails.aspx" />
     <Content Include="Web.config" />
@@ -446,19 +458,26 @@
     <Compile Include="Admin\View\DangNhap.aspx.designer.cs">
       <DependentUpon>DangNhap.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\View\QuanLyLoaiSanPham.aspx.cs">
-      <DependentUpon>QuanLyLoaiSanPham.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\View\QuanLyLoaiSanPham.aspx.designer.cs">
-      <DependentUpon>QuanLyLoaiSanPham.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\View\QuanLySanPham.aspx.cs">
       <DependentUpon>QuanLySanPham.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\View\QuanLySanPham.aspx.designer.cs">
       <DependentUpon>QuanLySanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View\QuanLyHoaDon.aspx.cs">
+      <DependentUpon>QuanLyHoaDon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View\QuanLyHoaDon.aspx.designer.cs">
+      <DependentUpon>QuanLyHoaDon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View\QuanLyLoaiSanPham.aspx.cs">
+      <DependentUpon>QuanLyLoaiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View\QuanLyLoaiSanPham.aspx.designer.cs">
+      <DependentUpon>QuanLyLoaiSanPham.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\View\QuanLyTaiKhoan.aspx.cs">
       <DependentUpon>QuanLyTaiKhoan.aspx</DependentUpon>
@@ -530,6 +549,41 @@
     </Compile>
     <Compile Include="View\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\LSP001.aspx.cs">
+      <DependentUpon>LSP001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\LSP001.aspx.designer.cs">
+      <DependentUpon>LSP001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\LSP002.aspx.cs">
+      <DependentUpon>LSP002.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\LSP002.aspx.designer.cs">
+      <DependentUpon>LSP002.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\LSP003.aspx.cs">
+      <DependentUpon>LSP003.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\LSP003.aspx.designer.cs">
+      <DependentUpon>LSP003.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\LSP004.aspx.cs">
+      <DependentUpon>LSP004.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\LSP004.aspx.designer.cs">
+      <DependentUpon>LSP004.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\LSP005.aspx.cs">
+      <DependentUpon>LSP005.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\LSP005.aspx.designer.cs">
+      <DependentUpon>LSP005.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Shop_Product.aspx.cs">
       <DependentUpon>Shop_Product.aspx</DependentUpon>

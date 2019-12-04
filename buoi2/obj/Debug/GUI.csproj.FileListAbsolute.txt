@@ -1,3 +1,4 @@
+D:\ASP.NET\DoAnASP\buoi2\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 D:\ASP.NET\DoAnASP\buoi2\bin\buoi2.dll.config
 D:\ASP.NET\DoAnASP\buoi2\bin\buoi2.dll
 D:\ASP.NET\DoAnASP\buoi2\bin\buoi2.pdb
@@ -7,6 +8,5 @@ D:\ASP.NET\DoAnASP\buoi2\bin\DAO.dll
 D:\ASP.NET\DoAnASP\buoi2\bin\BUS.pdb
 D:\ASP.NET\DoAnASP\buoi2\bin\DTO.pdb
 D:\ASP.NET\DoAnASP\buoi2\bin\DAO.pdb
-D:\ASP.NET\DoAnASP\buoi2\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 D:\ASP.NET\DoAnASP\buoi2\obj\Debug\buoi2.dll
 D:\ASP.NET\DoAnASP\buoi2\obj\Debug\buoi2.pdb

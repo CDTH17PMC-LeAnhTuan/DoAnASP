@@ -10,8 +10,8 @@
                 <h1 class="text-center">Quản Lý Danh Sách Tài Khoản</h1>
                 <div class="card-box">
                   
-                        <div class="table-responsive">
-                            <asp:GridView ID="grvDSUser" runat="server" CssClass="table table-dark mb-0" AutoGenerateColumns="False" Height="326px" Width="1101px" OnRowCommand="grvDSUser_RowCommand">
+                        <div class="table-esponsive">
+                            <asp:GridView ID="grvDSUser" runat="server" CssClass="table table-light mb-0" AutoGenerateColumns="False" Height="326px" Width="1101px" OnRowCommand="grvDSUser_RowCommand">
                                 <Columns>
                                     <asp:BoundField DataField="TenTaiKhoan" HeaderText="Tên Tài Khoản" />
                                     <asp:BoundField DataField="MatKhau" HeaderText="Mật Khẩu" />

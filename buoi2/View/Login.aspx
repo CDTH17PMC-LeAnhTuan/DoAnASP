@@ -7,33 +7,35 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-1">
-					<div class="login-form"><!--login form-->
+					<asp:Panel ID="formLogin" runat="server" CssClass="login-form"><!--login form-->
 						<h2>Login to your account</h2>
 						<%--<form action="#">--%>
-							<input type="text" placeholder="Name" />
-							<input type="email" placeholder="Email Address" />
+							<asp:TextBox ID="txtName" runat="server" placeholder="Name" />
+							<asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Password " />
 							<span>
-								<input type="checkbox" class="checkbox"> 
+								<asp:CheckBox ID="chkCheck" runat="server" type="checkbox" class="checkbox"/>
 								Keep me signed in
 							</span>
-                            
-							<button type="submit" class="btn btn-default">Login</button>
+							<asp:Button ID="btnLogin" runat="server"  CssClass="btn btn-default" BackColor="Orange" Text="Login" OnClick="btnLogin_Click"/>
 						<%--</form>--%>
-					</div><!--/login form-->
+					</asp:Panel><!--/login form-->
 				</div>
 				<div class="col-sm-1">
 					<h2 class="or">OR</h2>
 				</div>
 				<div class="col-sm-4">
-					<div class="signup-form"><!--sign up form-->
+					<asp:Panel ID="formSignup" runat="server" CssClass="signup-form"><!--sign up form-->
 						<h2>New User Signup!</h2>
 						<%--<form action="#">--%>
-							<input type="text" placeholder="Name"/>
-							<input type="email" placeholder="Email Address"/>
-							<input type="password" placeholder="Password"/>
-							<button type="submit" class="btn btn-default">Signup</button>
+							<asp:TextBox ID="txtName1" runat="server" type="text" placeholder="Name"/>
+							<asp:TextBox ID="txtEmail" runat="server" TextMode="Email" placeholder="Email Address"/>
+							<asp:TextBox ID="txtPassword1" runat="server" TextMode="Password" placeholder="Password"/>
+                            <asp:TextBox ID="txtSDT" runat="server" TextMode="Number" placeholder="Phone"/>
+                            <asp:TextBox ID="txtDiaChi" runat="server"  placeholder="Address"/>
+                            <asp:TextBox ID="txtHoTen" runat="server"  placeholder="Full Name"/>
+							<asp:Button  ID="btnSignup" runat="server" CssClass="btn btn-default" BackColor="Orange" Text="Sign up" OnClick="btnSignup_Click"/>
 						<%--</form>--%>
-					</div><!--/sign up form-->
+					</asp:Panel><!--/sign up form-->
 				</div>
 			</div>
 		</div>

@@ -9,7 +9,7 @@
                         <div class="card-box">
                           
                             <div class="table-responsive">                                                         
-                                <asp:GridView ID="grvLoaiSanPham" runat="server" AutoGenerateColumns="False">
+                                <asp:GridView ID="grvLoaiSanPham" runat="server" AutoGenerateColumns="False"  CssClass="table table-light mb-0">
                                     <Columns>
                                         <asp:BoundField DataField="MaLoaiSP" HeaderText="Mã Loại Sản Phẩm" />
                                         <asp:BoundField DataField="TenLoaiSP" HeaderText="Tên Loại Sản Phẩm" />
