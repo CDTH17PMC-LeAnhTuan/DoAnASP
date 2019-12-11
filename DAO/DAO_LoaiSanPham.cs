@@ -24,6 +24,7 @@ namespace DAO
             }
             return lstLoaiSanPham;
         }
+       
         public static DTO_LoaiSanPham ConverToDTO(DataRow dr)
         {
             DTO_LoaiSanPham lsp = new DTO_LoaiSanPham();

@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO_CTHoaDon.cs" />
+    <Compile Include="DAO_GioHang.cs" />
+    <Compile Include="DAO_HoaDon.cs" />
     <Compile Include="DAO_LoaiSanPham.cs" />
     <Compile Include="DAO_SanPham.cs" />
     <Compile Include="DAO_TaiKhoan.cs" />

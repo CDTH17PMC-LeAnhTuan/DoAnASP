@@ -20,7 +20,8 @@ namespace buoi2.Admin.View
             string mk = txtMatKhau.Text;
             if (BUS_TaiKhoan.DangNhap(tk, mk))
             {
-                Response.Write("<script>alert('Đăng nhập thành công!')</script>");
+               
+                Response.Redirect("QuanLySanPham.aspx");
             }
             else
             {

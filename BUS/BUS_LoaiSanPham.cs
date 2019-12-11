@@ -11,5 +11,9 @@ namespace BUS
 {
     public class BUS_LoaiSanPham
     {
+        public static List<DTO_LoaiSanPham> LoadDSLoaiSP()
+        {
+            return DAO_LoaiSanPham.LayDSLoaiSP();
+        }
     }
 }

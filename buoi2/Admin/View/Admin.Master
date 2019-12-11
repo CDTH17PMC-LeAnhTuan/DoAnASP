@@ -231,44 +231,27 @@
                         <div id="navigation">
                             <!-- Navigation Menu-->
                             <ul class="navigation-menu">
-
                                 <li class="has-submenu">
-                                    <a href="#">
-                                        <i class="la la-dashboard"></i>Dashboards
-                                        <div class="arrow-down"></div>
-                                    </a>
-                                    <ul class="submenu">
-                                        <li>
-                                            <a href="index.html">Dashboard 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-2.html">Dashboard 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="has-submenu">
-                                    <a href="#">
+                                    <a href="QuanLyTaiKhoan.aspx">
                                         <i class="la la-users"></i>Tài Khoản
                                         <div class="arrow-down"></div>
                                     </a>
                                     <ul class="submenu">
                                         <li>
-                                            <a href="QuanLyTaiKhoan.aspx">Quản Lý Tài Khoản</a>
+                                           <%-- <a href="">Quản Lý Tài Khoản</a>--%>
                                         </li>
-
                                     </ul>
                                 </li>
 
                                 <li class="has-submenu">
-                                    <a href="#"><i class="la la-cubes"></i>Sản Phẩm
+                                    <a href="QuanLySanPham.aspx"><i class="la la-cubes"></i>Sản Phẩm
                                         <div class="arrow-down"></div>
                                     </a>
                                     <ul class="submenu">
+                               
                                         <li>
-                                            <a href="QuanLySanPham.aspx">Quản Lý Sản Phẩm</a>
+                                            <a href="QuanLyLoaiSanPham.aspx">Quản Lý Loại Sản Phẩm</a>
                                         </li>
-
                                     </ul>
                                 </li>
 
