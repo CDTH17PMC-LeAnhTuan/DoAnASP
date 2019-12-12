@@ -9,8 +9,15 @@
                 <h1 class="text-center">Quản Lý Hóa Đơn </h1>
                 <div class="card-box">
                     <div class="table-responsive">
-                        <asp:GridView ID="grvHoaDon" runat="server">
-
+                        <asp:GridView ID="grvHoaDon" runat="server" AutoGenerateColumns="False" CssClass="table table-light mb-0 table-bordered">
+                            <Columns>
+                                <asp:BoundField DataField="MaHD" HeaderText="Mã Hóa Đơn" />
+                                <asp:BoundField DataField="TenTaiKhoan" HeaderText="Tên Tài Khoản" />
+                                <asp:BoundField DataField="NgayMua" HeaderText="Ngày Mua" />
+                                <asp:BoundField DataField="DiaChiGiaoHang" HeaderText="Địa Chỉ" />
+                                <asp:BoundField DataField="SDTGiaoHang" HeaderText="Số Điện Thoại" />
+                                <asp:BoundField DataField="TongTien" HeaderText="Tổng Tiền" />                               
+                            </Columns>
                         </asp:GridView>
                     </div>
                 </div>

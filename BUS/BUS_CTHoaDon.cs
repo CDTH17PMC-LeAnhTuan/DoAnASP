@@ -13,5 +13,10 @@ namespace BUS
         {
             return DAO_CTHoaDon.ThemCTHD(cthd);
         }
+        public static List<DTO_CTHoaDon> LoadDSCTHD()
+        {
+            return DAO_CTHoaDon.LoadDSCTHD();
+        }
     }
+    
 }

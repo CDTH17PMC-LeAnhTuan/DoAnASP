@@ -20,5 +20,26 @@ namespace DAO
             param[3] = new SqlParameter("@DonGia", cthd.DonGia);
             return DataProvider.ExecuteInsertQuery(query, param) == 1;
         }
+        public static List<DTO_CTHoaDon> LoadDSCTHD()
+        {
+            string query = "SELECT * FROM CTHoaDon";
+            SqlParameter[] param = new SqlParameter[0];
+            DataTable dtbHD = DataProvider.ExecuteSelectQuery(query, param);
+            List<DTO_CTHoaDon> lstCTHoaDon = new List<DTO_CTHoaDon>();
+            foreach (DataRow dr in dtbHD.Rows)
+            {
+                lstCTHoaDon.Add(ConvertToDTO(dr));
+            }
+            return lstCTHoaDon;
+        }
+        public static DTO_CTHoaDon ConvertToDTO(DataRow dr)
+        {
+            DTO_CTHoaDon cthd = new DTO_CTHoaDon();
+            cthd.MaHD = dr["MaHD"].ToString();
+            cthd.MaSP = dr["MaSP"].ToString();
+            cthd.SoLuong = Convert.ToInt32(dr["SoLuong"].ToString());
+            cthd.DonGia = Convert.ToInt32(dr["DonGia"].ToString());
+            return cthd;
+        }
     }
 }

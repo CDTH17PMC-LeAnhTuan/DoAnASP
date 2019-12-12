@@ -5,19 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BUS;
-
 namespace buoi2.Admin.View
 {
-    public partial class QuanLyHoaDon : System.Web.UI.Page
+    public partial class ChiTietHoaDon : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LoadDSHD();
+            LoadDSCTHD();
         }
-        protected void LoadDSHD()
+        protected void LoadDSCTHD()
         {
-            grvHoaDon.DataSource = BUS_HoaDon.LoadDSHD();
-            grvHoaDon.DataBind();
+            grvCTHD.DataSource = BUS_CTHoaDon.LoadDSCTHD();
+            grvCTHD.DataBind();
         }
     }
 }

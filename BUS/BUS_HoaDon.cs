@@ -9,6 +9,10 @@ namespace BUS
 {
     public class BUS_HoaDon
     {
+        public static List<DTO_HoaDon> LoadDSHD()
+        {
+            return DAO_HoaDon.LoadDSHD();
+        }
         public static string ThemHD(DTO_HoaDon hd)
         {
             try

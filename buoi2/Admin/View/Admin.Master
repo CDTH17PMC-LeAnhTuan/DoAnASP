@@ -210,7 +210,7 @@
 
                         <!-- LOGO -->
                         <div class="logo-box">
-                            <a href="QuanLyTaiKhoan.aspx" class="logo text-center">
+                            <a href="QuanLySanPham.aspx" class="logo text-center">
                                 <span class="logo-lg">
                                     <img src="../assets/images/logo.png" alt="" height="26">
                                     <!-- <span class="logo-lg-text-dark">Upvex</span> -->
@@ -251,6 +251,17 @@
                                
                                         <li>
                                             <a href="QuanLyLoaiSanPham.aspx">Quản Lý Loại Sản Phẩm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                 <li class="has-submenu">
+                                    <a href="QuanLyHoaDon.aspx"><i class="la la-cubes"></i>Hóa Đơn
+                                        <div class="arrow-down"></div>
+                                    </a>
+                                    <ul class="submenu">
+                               
+                                        <li>
+                                            <a href="ChiTietHoaDon.aspx">Chi Tiết Hóa Đơn</a>
                                         </li>
                                     </ul>
                                 </li>
