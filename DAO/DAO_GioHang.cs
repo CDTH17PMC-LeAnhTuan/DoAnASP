@@ -13,9 +13,9 @@ namespace DAO
         public static DataTable LayGH(string tenTaiKhoan)
         {
             string query = "SELECT GH.MaSP,TenSP,GiaTien,SoLuong,ThongTin,GiaTien*SoLuong AS ThanhTien,AnhMinhHoa FROM GioHang GH INNER JOIN SanPham SP ON GH.MaSP = SP.MaSP WHERE TenTaiKhoan = @TenTaiKhoan";
-           SqlParameter[] param = new SqlParameter[1];
-           param[0] = new SqlParameter("@TenTaiKhoan",tenTaiKhoan);
-           return DataProvider.ExecuteSelectQuery(query,param);
+            SqlParameter[] param = new SqlParameter[1];
+            param[0] = new SqlParameter("@TenTaiKhoan", tenTaiKhoan);
+            return DataProvider.ExecuteSelectQuery(query, param);
         }
         public static DTO_GioHang ConvertToDTO(DataRow dr)
         {
@@ -31,7 +31,7 @@ namespace DAO
             SqlParameter[] param = new SqlParameter[2];
             param[0] = new SqlParameter("@TenTaiKhoan", gioHang.TenTaiKhoan);
             param[1] = new SqlParameter("@MaSP", gioHang.MaSP);
-            return Convert.ToInt32(DataProvider.ExecuteSelectQuery(query, param).Rows[0][0])==1;
+            return Convert.ToInt32(DataProvider.ExecuteSelectQuery(query, param).Rows[0][0]) == 1;
 
         }
         public static bool ThemGH(DTO_GioHang gioHang)
@@ -58,7 +58,7 @@ namespace DAO
             string query = "DELETE FROM GioHang WHERE MaSP=@maSP";
             SqlParameter[] param = new SqlParameter[1];
             param[0] = new SqlParameter("@maSP", maSP);
-            return DataProvider.ExecuteDeleteQuery(query, param)==1;
+            return DataProvider.ExecuteDeleteQuery(query, param) == 1;
         }
     }
 }

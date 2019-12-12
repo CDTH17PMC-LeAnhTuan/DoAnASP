@@ -2,4 +2,3 @@ D:\ASP.NET\DoAnASP\DTO\bin\Debug\DTO.dll
 D:\ASP.NET\DoAnASP\DTO\bin\Debug\DTO.pdb
 D:\ASP.NET\DoAnASP\DTO\obj\Debug\DTO.dll
 D:\ASP.NET\DoAnASP\DTO\obj\Debug\DTO.pdb
-D:\ASP.NET\DoAnASP\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

@@ -25,7 +25,7 @@
 
         span {
             font-size: 20px;
-        }
+        }  
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="phdBody" runat="server">
@@ -84,72 +84,11 @@
                                         <asp:Button ID="btnXoaGH" runat="server" CausesValidation="False" CommandName="XoaGH" CommandArgument='<%# Eval("MaSP") %>' Text="Delete" CssClass="btn btn-warning"  />
 
                                     </td>
-                                </tr>
-
-                              <%--  <tr>
-                                    <td class="cart_product">
-                                        <a href="">
-                                            <img src="../View/images/cart/two.png" alt=""></a>
-                                    </td>
-                                    <td class="cart_description">
-                                        <h4><a href="">Colorblock Scuba</a></h4>
-                                        <p>Web ID: 1089772</p>
-                                    </td>
-                                    <td class="cart_price">
-                                        <p>$59</p>
-                                    </td>
-                                    <td class="cart_quantity">
-                                        <div class="cart_quantity_button">
-                                            <a class="cart_quantity_up" href="">+ </a>
-                                            <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-                                            <a class="cart_quantity_down" href="">- </a>
-                                        </div>
-                                    </td>
-                                    <td class="cart_total">
-                                        <p class="cart_total_price">$59</p>
-                                    </td>
-                                    <td class="cart_delete">
-                                        <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="cart_product">
-                                        <a href="">
-                                            <img src="../View/images/cart/three.png" alt=""></a>
-                                    </td>
-                                    <td class="cart_description">
-                                        <h4><a href="">Colorblock Scuba</a></h4>
-                                        <p>Web ID: 1089772</p>
-                                    </td>
-                                    <td class="cart_price">
-                                        <p>$59</p>
-                                    </td>
-                                    <td class="cart_quantity">
-                                        <div class="cart_quantity_button">
-                                            <a class="cart_quantity_up" href="">+ </a>
-                                            <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-                                            <a class="cart_quantity_down" href="">- </a>
-                                        </div>
-                                    </td>
-                                    <td class="cart_total">
-                                        <p class="cart_total_price">$59</p>
-                                    </td>
-                                    <td class="cart_delete">
-                                        <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-                                    </td>
-                                </tr>--%>
+                                </tr>                          
                             </ItemTemplate>
                         </asp:Repeater>
                     </tbody>
                 </table>
-                <%-- <asp:GridView ID="grvGioHang" runat="server" CssClass="table table-striped table-hover" AutoGenerateColumns="false" GridLines="None">
-                    <Columns>
-                        <asp:BoundField DataField="TenSP" HeaderText="Name" />
-                        <asp:BoundField DataField="GiaTien" HeaderText="Price" />
-                        <asp:BoundField DataField="SoLuong" HeaderText="Quality" />                     
-                        <asp:BoundField DataField="ThanhTien" HeaderText="Total Price"/>                       
-                    </Columns>
-                </asp:GridView>--%>
                 <div class="tongTien col-lg-12">
                     <span>Total Price: </span><asp:Label ID="lblTongTien" runat="server" CssClass="cart_total_price" Text="0"></asp:Label><h3>$</h3>
                     <br />
@@ -210,7 +149,6 @@
                                     <option>Canada</option>
                                     <option>Dubai</option>
                                 </select>
-
                             </li>
                             <li class="single_field zip-field">
                                 <label>Zip Code:</label>

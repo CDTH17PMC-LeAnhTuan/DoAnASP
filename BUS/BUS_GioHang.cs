@@ -25,7 +25,6 @@ namespace BUS
             }
             return tongTien;
         }
-
         public static bool ThemGioHang(DTO_GioHang gioHang)
         {
             if(DAO_GioHang.KTGH(gioHang))
@@ -35,11 +34,14 @@ namespace BUS
             else
             {
                 return DAO_GioHang.ThemGH(gioHang);
+
             }
         }
         public static bool XoaGioHang(string maSP)
         {          
                 return DAO_GioHang.XoaGH(maSP);      
         }
+
+       
     }
 }

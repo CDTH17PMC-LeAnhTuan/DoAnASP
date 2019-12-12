@@ -24,6 +24,7 @@ namespace buoi2
                     DataTable dtbKetQua = BUS_GioHang.LayGH(tenTK);
                     rptGiohang.DataSource = dtbKetQua;
                     rptGiohang.DataBind();
+        
                     lblTongTien.Text = BUS_GioHang.TinhTongTienGH(tenTK).ToString();
                 }
             }
@@ -31,9 +32,8 @@ namespace buoi2
             {
                 Response.Redirect("Login.aspx");
             }
+
         }
-
-
 
         protected void btnThanhToan_Click(object sender, EventArgs e)
         {
@@ -48,7 +48,6 @@ namespace buoi2
                 hd.SdtGiaoHang = "0905939947";
                 hd.TongTien = BUS_GioHang.TinhTongTienGH(tenTK);
                 hd.MaHD = BUS_HoaDon.ThemHD(hd);
-
                 DataTable dtbKetQua = BUS_GioHang.LayGH(tenTK);
                 foreach (DataRow dr in dtbKetQua.Rows)
                 {
@@ -65,12 +64,12 @@ namespace buoi2
         protected void rptGiohang_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             DTO_GioHang gh = new DTO_GioHang();
-            if(e.CommandName == "CapNhatGH")
+            if (e.CommandName == "CapNhatGH")
             {
                 gh.MaSP = e.CommandArgument.ToString();
                 gh.TenTaiKhoan = Request.Cookies["TenTK"].Value;
                 gh.SoLuong = Convert.ToInt32((e.Item.FindControl("txtSoLuong") as TextBox).Text);
-                if(BUS_GioHang.ThemGioHang(gh)==true)
+                if (BUS_GioHang.ThemGioHang(gh) == true)
                 {
                     Response.Write("<script>alert('Cập nhật thành công')</script>");
                     Response.Redirect("Cart.aspx");
@@ -79,11 +78,10 @@ namespace buoi2
             if (e.CommandName == "XoaGH")
             {
                 string maSP = e.CommandArgument.ToString();
-              
-                    BUS_GioHang.XoaGioHang(maSP);
-                    Response.Redirect("Cart.aspx");
-
+                BUS_GioHang.XoaGioHang(maSP);
+                Response.Redirect("Cart.aspx");
             }
         }
+
     }
 }
