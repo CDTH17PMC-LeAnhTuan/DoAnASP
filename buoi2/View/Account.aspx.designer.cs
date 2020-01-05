@@ -7,126 +7,90 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace buoi2 {
+namespace buoi2.View {
     
     
-    public partial class WebForm1 {
+    public partial class Account {
         
         /// <summary>
-        /// lblHienThi control.
+        /// grvDSUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHienThi;
+        protected global::System.Web.UI.WebControls.GridView grvDSUser;
         
         /// <summary>
-        /// btnDangXuat control.
+        /// formSignup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDangXuat;
+        protected global::System.Web.UI.WebControls.Panel formSignup;
         
         /// <summary>
-        /// txtTimKiem control.
+        /// txtTenTaiKhoan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTimKiem;
+        protected global::System.Web.UI.WebControls.TextBox txtTenTaiKhoan;
         
         /// <summary>
-        /// btnTimKiem control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnTimKiem;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-        /// rpLoaiSP control.
+        /// txtMatKhau control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rpLoaiSP;
+        protected global::System.Web.UI.WebControls.TextBox txtMatKhau;
         
         /// <summary>
-        /// rptSanPham control.
+        /// txtSDT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSanPham;
+        protected global::System.Web.UI.WebControls.TextBox txtSDT;
         
         /// <summary>
-        /// rptTshirt control.
+        /// txtDiaChi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptTshirt;
+        protected global::System.Web.UI.WebControls.TextBox txtDiaChi;
         
         /// <summary>
-        /// rptBlazers control.
+        /// txtHoTen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptBlazers;
+        protected global::System.Web.UI.WebControls.TextBox txtHoTen;
         
         /// <summary>
-        /// rptSunglass control.
+        /// btnCapNhat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSunglass;
-        
-        /// <summary>
-        /// rptKids control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptKids;
-        
-        /// <summary>
-        /// rptPoloshirt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptPoloshirt;
-        
-        /// <summary>
-        /// rptCarousel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCarousel1;
-        
-        /// <summary>
-        /// rptCarousel2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCarousel2;
+        protected global::System.Web.UI.WebControls.Button btnCapNhat;
     }
 }

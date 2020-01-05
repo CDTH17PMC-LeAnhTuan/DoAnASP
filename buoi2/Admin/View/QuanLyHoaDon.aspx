@@ -18,6 +18,8 @@
                                 <asp:BoundField DataField="SDTGiaoHang" HeaderText="Số Điện Thoại" />
                                 <asp:BoundField DataField="TongTien" HeaderText="Tổng Tiền" />                               
                             </Columns>
+                        <asp:GridView ID="grvHoaDon" runat="server">
+
                         </asp:GridView>
                     </div>
                 </div>

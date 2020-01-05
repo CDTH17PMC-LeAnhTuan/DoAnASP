@@ -282,6 +282,7 @@
     <Content Include="Admin\View\QuanLyLoaiSanPham.aspx" />
     <Content Include="Admin\View\QuanLyTaiKhoan.aspx" />
     <Content Include="View\404.aspx" />
+    <Content Include="View\Account.aspx" />
     <Content Include="View\Blog-single.aspx" />
     <Content Include="View\Blog.aspx" />
     <Content Include="View\Cart.aspx" />
@@ -500,6 +501,13 @@
     </Compile>
     <Compile Include="View\404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Blog-single.aspx.cs">
       <DependentUpon>Blog-single.aspx</DependentUpon>

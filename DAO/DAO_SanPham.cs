@@ -35,6 +35,8 @@ namespace DAO
             }
             return lstSanPham;
         }
+        //
+   
         public static DTO_SanPham LaySanPham(string maSP)
         {
             string query = "SELECT * From SanPham WHERE MaSP = @MaSP";
@@ -160,6 +162,14 @@ namespace DAO
                 lstLoaiSanPham.Add(ConverToDTO(dr));
             }
             return lstLoaiSanPham;
+        }
+        //
+        public static DTO_SanPham TimKiemSP(string tenSP)
+        {
+            string query = "SELECT * FROM SanPham WHERE TenSanPham LIKE '%@TenSanPham%'";
+            SqlParameter[] param = new SqlParameter[0];
+            param[0] = new SqlParameter("@TenSanPham", tenSP);
+            return ConverToDTO(DataProvider.ExecuteSelectQuery(query, param).Rows[0]);
         }
         //
         public static DTO_SanPham ConverToDTO(DataRow dr)

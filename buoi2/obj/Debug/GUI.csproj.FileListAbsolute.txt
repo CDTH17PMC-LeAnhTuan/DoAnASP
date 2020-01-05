@@ -10,3 +10,15 @@ D:\ASP.NET\DoAnASP\buoi2\bin\DTO.pdb
 D:\ASP.NET\DoAnASP\buoi2\bin\DAO.pdb
 D:\ASP.NET\DoAnASP\buoi2\obj\Debug\buoi2.dll
 D:\ASP.NET\DoAnASP\buoi2\obj\Debug\buoi2.pdb
+D:\GitHub\DoAnASP\buoi2\bin\buoi2.dll.config
+D:\GitHub\DoAnASP\buoi2\bin\buoi2.dll
+D:\GitHub\DoAnASP\buoi2\bin\buoi2.pdb
+D:\GitHub\DoAnASP\buoi2\bin\BUS.dll
+D:\GitHub\DoAnASP\buoi2\bin\DTO.dll
+D:\GitHub\DoAnASP\buoi2\bin\DAO.dll
+D:\GitHub\DoAnASP\buoi2\bin\BUS.pdb
+D:\GitHub\DoAnASP\buoi2\bin\DTO.pdb
+D:\GitHub\DoAnASP\buoi2\bin\DAO.pdb
+D:\GitHub\DoAnASP\buoi2\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\GitHub\DoAnASP\buoi2\obj\Debug\buoi2.dll
+D:\GitHub\DoAnASP\buoi2\obj\Debug\buoi2.pdb

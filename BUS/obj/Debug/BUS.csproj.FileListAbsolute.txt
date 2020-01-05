@@ -7,3 +7,12 @@ D:\ASP.NET\DoAnASP\BUS\bin\Debug\DTO.pdb
 D:\ASP.NET\DoAnASP\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\ASP.NET\DoAnASP\BUS\obj\Debug\BUS.dll
 D:\ASP.NET\DoAnASP\BUS\obj\Debug\BUS.pdb
+D:\GitHub\DoAnASP\BUS\bin\Debug\BUS.dll
+D:\GitHub\DoAnASP\BUS\bin\Debug\BUS.pdb
+D:\GitHub\DoAnASP\BUS\bin\Debug\DAO.dll
+D:\GitHub\DoAnASP\BUS\bin\Debug\DTO.dll
+D:\GitHub\DoAnASP\BUS\bin\Debug\DAO.pdb
+D:\GitHub\DoAnASP\BUS\bin\Debug\DTO.pdb
+D:\GitHub\DoAnASP\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\GitHub\DoAnASP\BUS\obj\Debug\BUS.dll
+D:\GitHub\DoAnASP\BUS\obj\Debug\BUS.pdb

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using BUS;
 namespace buoi2
 {
     public partial class GiaoDienChinh : System.Web.UI.MasterPage
@@ -12,6 +12,8 @@ namespace buoi2
         protected void Page_Load(object sender, EventArgs e)
         {
             
-        }    
+        }
+
+ 
     }
 }

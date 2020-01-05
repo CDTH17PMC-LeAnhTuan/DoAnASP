@@ -24,7 +24,6 @@ namespace buoi2
                     DataTable dtbKetQua = BUS_GioHang.LayGH(tenTK);
                     rptGiohang.DataSource = dtbKetQua;
                     rptGiohang.DataBind();
-        
                     lblTongTien.Text = BUS_GioHang.TinhTongTienGH(tenTK).ToString();
                 }
             }

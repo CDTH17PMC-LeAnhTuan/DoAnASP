@@ -6,6 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="phdBody" runat="server">
     
     <!--slider-->
+   
     <section id="slider">
         <div class="container">
             <asp:Label ID="lblHienThi" runat="server"></asp:Label>
@@ -71,11 +72,18 @@
                 </div>
             </div>
         </div>
+         <div class="container">
+        <div class="col-sm-6">
+         <asp:TextBox ID="txtTimKiem" runat="server" CssClass="form-control mr-sm-2" type="text" placeholder="Search"/>
+          <asp:Button ID="btnTimKiem" runat="server" CssClass="btn btn-warning" Text="Search" OnClick="btnTimKiem_Click" /> 
+            </div>
+            </div>
     </section>
     <!--/slider-->
     <section>
+       
         <div class="container">
-            <div class="row">
+            <div class="row">                   
                 <div class="col-sm-3">
                     <div class="left-sidebar">
                         <h2>Category</h2>
@@ -145,8 +153,8 @@
 
                     </div>
                 </div>
-
-                <div class="col-sm-9 padding-right">
+               
+                    <div class="col-sm-9 padding-right">
                     <div class="features_items">
                         <!--features_items-->
                         <h2 class="title text-center">Features Items</h2>
@@ -192,6 +200,7 @@
 
                     <div class="category-tab">
                         <!--category-tab-->
+
                         <div class="col-sm-12">
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#tshirt" data-toggle="tab">T-Shirt</a></li>

@@ -82,6 +82,14 @@ namespace BUS
             }
             return null;
         }
-
+        //
+        public static DTO_SanPham TimKiemSanPham(string tenSP)
+        {
+            if (KTSPTonTai(tenSP))
+            {
+                return DAO_SanPham.TimKiemSP(tenSP);
+            }
+            return null;
+        }
     }
 }

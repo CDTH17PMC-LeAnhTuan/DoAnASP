@@ -12,6 +12,14 @@ namespace DAO
     {
 
         //
+        public static DataTable LayTaiKhoan(string tenTaiKhoan)
+        {
+            string query = "SELECT TenTaiKhoan,MatKhau,Email,SDT,DiaChi,HoTen FROM TaiKhoan WHERE TenTaiKhoan=@TenTaiKhoan";
+            SqlParameter []param = new SqlParameter[1];
+            param[0] = new SqlParameter("@TenTaiKhoan", tenTaiKhoan);
+            return DataProvider.ExecuteSelectQuery(query, param);
+
+        }
         public static bool DangNhap(string tenTaiKhoan,string matKhau)
         {
             if (DAO_TaiKhoan.KTTenTaiKhoan(tenTaiKhoan))

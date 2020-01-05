@@ -13,6 +13,13 @@ namespace BUS
     public class BUS_TaiKhoan
     {
         //
+        public static DataTable LayTaiKhoan(string tenTaiKhoan)
+        {
+            
+                return DAO_TaiKhoan.LayTaiKhoan(tenTaiKhoan);
+         
+        }
+        //
         public static bool DangNhap(string tenTaiKhoan,string matKhau)
         {
             return DAO_TaiKhoan.DangNhap(tenTaiKhoan, matKhau);

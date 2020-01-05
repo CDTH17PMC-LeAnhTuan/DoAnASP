@@ -13,6 +13,7 @@ namespace buoi2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+          
             LoadDSSP();
             HttpCookie cookie = Request.Cookies["TenTK"];
             if (cookie != null)
@@ -65,6 +66,11 @@ namespace buoi2
           
         }
 
+        public void LoadSanPhamTheoTen()
+        {
+            rptSanPham.DataSource = BUS_SanPham.LayDSSanPham(txtTimKiem.Text);
+            rptSanPham.DataBind();
+        }
         protected void btnDangXuat_Click(object sender, EventArgs e)
         {
             HttpCookie cookie = Request.Cookies["TenTK"];
@@ -98,6 +104,14 @@ namespace buoi2
                 {
                     Response.Redirect("Login.aspx");
                 }
+            }
+        }
+
+        protected void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if(BUS_SanPham.TimKiemSanPham(txtTimKiem.Text)!=null)
+            {
+                LoadSanPhamTheoTen();
             }
         }
         
